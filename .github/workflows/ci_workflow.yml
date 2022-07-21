@@ -1,0 +1,33 @@
+# Github workflow runner instructions using cutomized actions
+name: Continuous Integration
+
+on: [ push ]
+
+jobs:
+  runner_details:
+    runs-on: ubuntu-latest
+    name: Runner Details
+    steps:
+      ##########   CHECK OUT REPO AND PRINT REPO INFO #######
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Intro to job runner
+        run: |
+          echo "job runner details "
+          echo "Event: ${{ github.event_name }}"
+          echo "os: ${{ runner.os }} server."
+          echo "Repository: ${{ github.repository }}:${{ github.ref_name }}."
+          ls ${{ github.workspace }}
+
+  run_simple_loop:
+    runs-on: ubuntu-latest
+    name: Run Simple Loop
+    steps:
+      ##########   CHECK OUT REPO AND DOWNLOAD PACKAGES AND RUN CODE #######
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Install package and run code
+        run: |
+          pip install poetry
+          poetry install
+          python3 simple_loop.py

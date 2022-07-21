@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "continuous_integration"
+version = "0.1.0"
+description = "A sample project of adding continuous integration to GitHub and utilising the GitHub actions, workflows and job settings."
+authors = ["ibrahimroshdy <ibrahimabdelrahman@aucegypt.edu>"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+tqdm = "^4.64.0"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

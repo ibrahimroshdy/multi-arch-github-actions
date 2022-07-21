@@ -1,0 +1,25 @@
+# custom action to install packages and run simple loop scrript
+name: 'Continuous Integration Custom Action'
+description: 'Install required packages and run code'
+inputs:
+  project_name: # Project name
+    description: 'project name for printing'
+    required: true
+    default: 'none'
+
+# The action runs a composite set of instructions
+# that will first install the needed packages
+# then runs the script
+runs:
+  using: "composite"
+  steps:
+    - run: pip install poetry pyfiglet
+      shell: bash
+    - run: poetry config virtualenvs.create false
+      shell: bash
+    - run: poetry install
+      shell: bash
+    - run: pyfiglet ${{ inputs.project_name }}
+      shell: bash
+    - run: python simple_loop.py
+      shell: bash

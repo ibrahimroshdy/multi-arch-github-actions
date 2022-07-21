@@ -26,8 +26,9 @@ jobs:
       ##########   CHECK OUT REPO AND DOWNLOAD PACKAGES AND RUN CODE #######
       - name: Checkout
         uses: actions/checkout@v3
-      - name: Install package and run code
+      - name: Install poetry and python packages
         run: |
           pip install poetry
           poetry install
-          python3 simple_loop.py
+      - name: Run Code
+        run: python simple_loop.py

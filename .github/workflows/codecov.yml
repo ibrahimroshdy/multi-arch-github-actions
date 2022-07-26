@@ -20,4 +20,4 @@ jobs:
       - name: Run Coverage
         run: coverage run simple_loop.py
       - name: Run CodeCov
-        run: codecov --token=${{ secrets.codecov_token }}"
+        run: codecov --token=${{ secrets.codecov_token }}

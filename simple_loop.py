@@ -13,6 +13,10 @@ def simple_loop_func(number):
         pass
 
 
+def __ignored_func():
+    print("This is an ignored function and this message will not be printed")
+
+
 if __name__ == '__main__':
     print("This is a progress bar of the simple loop script")
     simple_loop_func(1000000)

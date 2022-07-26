@@ -18,7 +18,6 @@ jobs:
           echo "os: ${{ runner.os }} server."
           echo "Repository: ${{ github.repository }}:${{ github.ref_name }}."
           ls ${{ github.workspace }}
-  
 
   run_simple_loop:
     runs-on: ubuntu-latest

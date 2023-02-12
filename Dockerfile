@@ -1,10 +1,9 @@
 # Docker image as python for system requirment (Installing requirements for debian environment)
-
 FROM  python:3.9-slim
 LABEL org.opencontainers.image.source https://github.com/ibrahimroshdy/continuous_integration
 LABEL org.opencontainers.image.description "A sample project of adding continuous integration to GitHub and utilising the GitHub actions, workflows and job settings."
 RUN apt-get update \
-&& apt-get install -y --no-install-recommends git gcc python3.7-dev\
+&& apt-get install -y --no-install-recommends\
 && apt-get purge -y --auto-remove \
 && rm -rf /var/lib/apt/lists/*
 

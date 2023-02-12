@@ -1,5 +1,5 @@
 # Continuous Integration 
-[![Python](https://upload.wikimedia.org/wikipedia/commons/f/fc/Blue_Python_3.7_Shield_Badge.svg)]()
+[![Python](https://upload.wikimedia.org/wikipedia/commons/f/fc/Blue_Python_3.8_Shield_Badge.svg)]()
 [![Continuous Integration](https://github.com/ibrahimroshdy/continuous_integration/actions/workflows/ci_workflow.yml/badge.svg?branch=main)](https://github.com/ibrahimroshdy/continuous_integration/actions/workflows/ci_workflow.yml)
 [![codecov](https://codecov.io/gh/ibrahimroshdy/continuous_integration/branch/main/graph/badge.svg?token=Y56VABDZA7)](https://codecov.io/gh/ibrahimroshdy/continuous_integration)
 
@@ -31,6 +31,7 @@ continuous_integration
 There is no need to run the project locally, but in case it is needed here is the quick start instructions used. 
 Note: Those are the same instructions in `.github/workflows/ci_workflows.yml` and `.github/actions/install-run-code/actions.yml`
 
+Project is also setup for a Docker Multi-arch build for `arm64` and `amd64`. Read more about it in this [article]().
 
 Create a virtualenv 
 ```bash

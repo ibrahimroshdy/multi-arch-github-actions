@@ -2,10 +2,6 @@
 FROM  python:3.8-slim
 LABEL org.opencontainers.image.source https://github.com/ibrahimroshdy/continuous_integration
 LABEL org.opencontainers.image.description "A sample project of adding continuous integration to GitHub and utilising the GitHub actions, workflows and job settings."
-RUN apt-get update \
-&& apt-get install -y --no-install-recommends\
-&& apt-get purge -y --auto-remove \
-&& rm -rf /var/lib/apt/lists/*
 
 # Keeps Python from generating .pyc files in the container
 ENV PYTHONDONTWRITEBYTECODE 1

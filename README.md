@@ -31,7 +31,7 @@ continuous_integration
 There is no need to run the project locally, but in case it is needed here is the quick start instructions used. 
 Note: Those are the same instructions in `.github/workflows/ci_workflows.yml` and `.github/actions/install-run-code/actions.yml`
 
-Project is also setup for a Docker Multi-arch build for `arm64` and `amd64`. Read more about it in this [article]().
+Project is also setup for a Docker Multi-arch build for `arm64` and `amd64`. Read more about it in this [article](https://ibrahimroshdy.medium.com/how-to-build-your-docker-images-using-multi-arch-to-support-arm64-m1-macbook-6ebc42a47cd7).
 
 Create a virtualenv 
 ```bash

@@ -19,6 +19,7 @@ jobs:
           echo "Repository: ${{ github.repository }}:${{ github.ref_name }}."
           ls ${{ github.workspace }}
 
+
   run_simple_loop:
     runs-on: ubuntu-latest
     name: Run Simple Loop (No Custom Action)

@@ -27,11 +27,10 @@ jobs:
       ##########   CHECK OUT REPO AND DOWNLOAD PACKAGES AND RUN CODE #######
       - name: Checkout
         uses: actions/checkout@v3
-      - name: Install poetry and python packages
+      - name: Install python packages
         run: |
-          pip install poetry pyfiglet
-          poetry config virtualenvs.create false
-          poetry install
+          pip install pyfiglet
+          pip install -r requirements.txt
           pyfiglet Continuous Integration
       - name: Run Code
         run: python simple_loop.py
@@ -43,7 +42,7 @@ jobs:
       ##########   CHECK OUT REPO AND DOWNLOAD PACKAGES AND RUN CODE WITH CUSTOM ACTION #######
       - name: Checkout
         uses: actions/checkout@v3
-      - name: Install poetry and python packages
+      - name: Install python packages
         uses: ./.github/actions/install-run-code
         with:
           project_name:

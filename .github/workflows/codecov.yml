@@ -5,7 +5,7 @@ on: [ push ]
 
 jobs:
   codecov:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     name: CodeCov
     steps:
       ##########   CHECK OUT REPO AND DOWNLOAD PACKAGES AND RUN COVERAGE & CODECOV #######
@@ -13,9 +13,8 @@ jobs:
         uses: actions/checkout@v3
       - name: Install poetry and python packages
         run: |
-          pip install poetry pyfiglet
-          poetry config virtualenvs.create false
-          poetry install
+          pip install pyfiglet
+          pip install -r requirements.txt
           pyfiglet Continuous Integration
       - name: Run Coverage
         run: coverage run simple_loop.py

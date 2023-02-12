@@ -5,7 +5,7 @@ on: [ push ]
 
 jobs:
   runner_details:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     name: Runner Details
     steps:
       ##########   CHECK OUT REPO AND PRINT REPO INFO #######
@@ -19,30 +19,30 @@ jobs:
           echo "Repository: ${{ github.repository }}:${{ github.ref_name }}."
           ls ${{ github.workspace }}
 
+
   run_simple_loop:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     name: Run Simple Loop (No Custom Action)
     steps:
       ##########   CHECK OUT REPO AND DOWNLOAD PACKAGES AND RUN CODE #######
       - name: Checkout
         uses: actions/checkout@v3
-      - name: Install poetry and python packages
+      - name: Install python packages
         run: |
-          pip install poetry pyfiglet
-          poetry config virtualenvs.create false
-          poetry install
+          pip install pyfiglet
+          pip install -r requirements.txt
           pyfiglet Continuous Integration
       - name: Run Code
         run: python simple_loop.py
 
   run_simple_loop_action:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     name: Run Custom Action
     steps:
       ##########   CHECK OUT REPO AND DOWNLOAD PACKAGES AND RUN CODE WITH CUSTOM ACTION #######
       - name: Checkout
         uses: actions/checkout@v3
-      - name: Install poetry and python packages
+      - name: Install python packages
         uses: ./.github/actions/install-run-code
         with:
           project_name:

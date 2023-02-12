@@ -13,11 +13,9 @@ inputs:
 runs:
   using: "composite"
   steps:
-    - run: pip install poetry pyfiglet
+    - run: pip install pyfiglet
       shell: bash
-    - run: poetry config virtualenvs.create false
-      shell: bash
-    - run: poetry install
+    - run: pip install -r requirements.txt
       shell: bash
     - run: pyfiglet ${{ inputs.project_name }}
       shell: bash

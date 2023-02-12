@@ -1,5 +1,5 @@
 # Continuous Integration 
-[![Python](https://upload.wikimedia.org/wikipedia/commons/f/fc/Blue_Python_3.8_Shield_Badge.svg)]()
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 [![Continuous Integration](https://github.com/ibrahimroshdy/continuous_integration/actions/workflows/ci_workflow.yml/badge.svg?branch=main)](https://github.com/ibrahimroshdy/continuous_integration/actions/workflows/ci_workflow.yml)
 [![codecov](https://codecov.io/gh/ibrahimroshdy/continuous_integration/branch/main/graph/badge.svg?token=Y56VABDZA7)](https://codecov.io/gh/ibrahimroshdy/continuous_integration)
 

@@ -5,7 +5,7 @@ on: [ push ]
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     name: build for amd64/arm64
     steps:
       - name: Checkout

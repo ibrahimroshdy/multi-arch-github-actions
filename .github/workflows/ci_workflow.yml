@@ -5,7 +5,7 @@ on: [ push ]
 
 jobs:
   runner_details:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     name: Runner Details
     steps:
       ##########   CHECK OUT REPO AND PRINT REPO INFO #######
@@ -21,7 +21,7 @@ jobs:
 
 
   run_simple_loop:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     name: Run Simple Loop (No Custom Action)
     steps:
       ##########   CHECK OUT REPO AND DOWNLOAD PACKAGES AND RUN CODE #######
@@ -37,7 +37,7 @@ jobs:
         run: python simple_loop.py
 
   run_simple_loop_action:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     name: Run Custom Action
     steps:
       ##########   CHECK OUT REPO AND DOWNLOAD PACKAGES AND RUN CODE WITH CUSTOM ACTION #######

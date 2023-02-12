@@ -5,7 +5,7 @@ on: [ push ]
 
 jobs:
   codecov:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     name: CodeCov
     steps:
       ##########   CHECK OUT REPO AND DOWNLOAD PACKAGES AND RUN COVERAGE & CODECOV #######

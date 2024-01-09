@@ -3,7 +3,7 @@ name: Deploy Pages
 on:
   push:
     branches:
-      - develop  # Trigger the workflow only on pushes to the develop branch
+      - main  # Trigger the workflow only on pushes to the main branch
 
 jobs:
   documents:
@@ -36,8 +36,8 @@ jobs:
           git config user.email "${{ secrets.GH_EMAIL }}"
           git remote add gh-token "https://${{ secrets.PAT }}@github.com/ibrahimroshdy/continuous_integration.git"
           git fetch gh-token
-          git checkout develop  # Ensure you are on the 'develop' branch
-          git pull origin develop
+          git checkout main  # Ensure you are on the 'main' branch
+          git pull origin main
 
       - name: Fetch gh-pages branch
         run: git fetch gh-token gh-pages:gh-pages

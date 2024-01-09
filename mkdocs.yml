@@ -1,0 +1,120 @@
+# mkdocs.yml - WitnessAI Documentation Configuration
+
+# Site Information
+site_name: Continuous Integration
+site_description: Continuous Integration with Github Actions and Docker Multi-Arch Buildx for amd64 and arm64.
+site_author: ibrahimroshdy
+
+# Copyright Information
+copyright: Copyright &copy; 2024 Ibrahim Roshdy
+
+# Repository Information
+repo_url: https://github.com/ibrahimroshdy/continuous_integration
+repo_name: ir/continuous_integration
+
+# Edit Button Configuration
+edit_uri: ""
+
+# Plugins Configuration
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          import:
+            - https://docs.python.org/3/objects.inv
+            - https://installer.readthedocs.io/en/stable/objects.inv  # demonstration purpose in the docs
+            - https://mkdocstrings.github.io/autorefs/objects.inv
+            - https://docs.celeryproject.org/en/stable/objects.inv
+          paths: [ src ]
+          options:
+            #            docstring_style: google
+            docstring_options:
+              ignore_init_summary: true
+            #            docstring_section_style: list
+            filters: [ "!^_" ]
+            heading_level: 4
+            inherited_members: true
+            merge_init_into_class: true
+            separate_signature: true
+            show_root_heading: true
+            show_root_full_path: true
+            show_signature_annotations: true
+            show_symbol_type_heading: true
+            show_symbol_type_toc: true
+            signature_crossrefs: true
+            summary: true
+
+# Theme Configuration
+theme:
+  name: material
+  #  logo: logo.png
+  #  favicon: logo.png
+  icon:
+    repo: fontawesome/brands/github
+  features:
+    - announce.dismiss
+    - content.action.edit
+    - content.action.view
+    - content.code.annotate
+    - content.code.copy
+    # - content.code.select
+    # - content.tabs.link
+    - content.tooltips
+    # - header.autohide
+    # - navigation.expand
+    - navigation.footer
+    - navigation.indexes
+    # - navigation.instant
+    # - navigation.instant.prefetch
+    # - navigation.instant.progress
+    # - navigation.prune
+    - navigation.sections
+#    - navigation.tabs
+#      - navigation.tabs.sticky
+    #    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+    # - toc.integrate
+  palette:
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: green
+      accent: black
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: green
+      accent: black
+      toggle:
+        icon: material/weather-night
+        name: Switch to system preference
+
+
+# Navigation Configuration
+nav:
+  - Index: index.md
+
+
+# Markdown Extensions
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+      separator: "_"
+
+

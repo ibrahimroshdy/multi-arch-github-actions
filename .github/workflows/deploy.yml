@@ -1,9 +1,7 @@
-name: deploy
+# Github workflow runner instructions using cutomized actions
+name: Deploy Pages
 
-on:
-  push:
-    tags:
-      - '*'
+on: [ push ]
 
 jobs:
 

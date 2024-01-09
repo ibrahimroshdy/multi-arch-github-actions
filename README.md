@@ -26,6 +26,7 @@ continuous_integration
 └── simple_loop.py
 ```
 
+
 ### Getting Started 
 
 There is no need to run the project locally, but in case it is needed here is the quick start instructions used. 

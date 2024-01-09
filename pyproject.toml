@@ -7,7 +7,7 @@ authors = ["ibrahimroshdy <ibrahimabdelrahman@aucegypt.edu>"]
 [tool.poetry.dependencies]
 python = "^3.8"
 tqdm = "^4.64.0"
-codecov = "^2.1.12"
+codecov = "^2.1.13"
 coverage = "^6.4.2"
 testresources = "^2.0.1"
 

@@ -3,7 +3,7 @@ name: Deploy Pages
 on:
   push:
     branches:
-      - develop  # Trigger the workflow only on pushes to the develop branch
+      - develop
 
 jobs:
   documents:
@@ -39,11 +39,5 @@ jobs:
           git checkout develop  # Ensure you are on the 'develop' branch
           git pull origin develop
 
-      - name: Fetch gh-pages branch
-        run: git fetch gh-token gh-pages:gh-pages
-
       - name: Deploy documents
         run: python -m mkdocs gh-deploy -v --clean --remote-name gh-token
-
-      - name: Push changes to gh-pages branch
-        run: git push gh-token gh-pages

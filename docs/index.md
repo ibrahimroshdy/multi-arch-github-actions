@@ -10,7 +10,7 @@ This project contains a `simple_loop.py` python file that prints a progress bar 
 The aim of this project to serve a sample project for implementing GitHub's 
 workflow using workflow files, and custom actions and multiple jobs.
 
-### Folder Stucture 
+### Folder Structure 
 ```
 continuous_integration
 │

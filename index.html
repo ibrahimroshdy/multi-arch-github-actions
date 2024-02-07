@@ -435,10 +435,10 @@
 <a href="https://github.com/ibrahimroshdy/continuous_integration/actions/workflows/ci_workflow.yml"><img alt="Continuous Integration" src="https://github.com/ibrahimroshdy/continuous_integration/actions/workflows/ci_workflow.yml/badge.svg?branch=main" /></a>
 <a href="https://codecov.io/gh/ibrahimroshdy/continuous_integration"><img alt="codecov" src="https://codecov.io/gh/ibrahimroshdy/continuous_integration/branch/main/graph/badge.svg?token=Y56VABDZA7" /></a></p>
 <h2 id="about">About<a class="headerlink" href="#about" title="Permanent link">&para;</a></h2>
-<p>A sample project of adding continuous integration 
+<p>A sample project of adding continuous integration
 to GitHub and utilising the GitHub actions, workflows and job settings.
 This project contains a <code>simple_loop.py</code> python file that prints a progress bar of a for loop.
-The aim of this project to serve a sample project for implementing GitHub's 
+The aim of this project to serve a sample project for implementing GitHub's
 workflow using workflow files, and custom actions and multiple jobs.</p>
 <h3 id="folder_structure">Folder Structure<a class="headerlink" href="#folder_structure" title="Permanent link">&para;</a></h3>
 <pre><code>continuous_integration
@@ -448,17 +448,17 @@ workflow using workflow files, and custom actions and multiple jobs.</p>
 │     ├── actions # Custom actions directory
 │     │   └── install-run-code # This project's Custom Action to be referred to by name in workflows
 │     │       └── action.yml # Action instructions file [Must be named action]
-│     └── workflows # This project's Workflows 
+│     └── workflows # This project's Workflows
 │         └── ci_workflow.yml # Workflow instructions file
 ├── .gitignore
 ├── pyproject.toml
 └── simple_loop.py
 </code></pre>
 <h3 id="getting_started">Getting Started<a class="headerlink" href="#getting_started" title="Permanent link">&para;</a></h3>
-<p>There is no need to run the project locally, but in case it is needed here is the quick start instructions used. 
+<p>There is no need to run the project locally, but in case it is needed here is the quick start instructions used.
 Note: Those are the same instructions in <code>.github/workflows/ci_workflows.yml</code> and <code>.github/actions/install-run-code/actions.yml</code></p>
 <p>Project is also setup for a Docker Multi-arch build for <code>arm64</code> and <code>amd64</code>. Read more about it in this <a href="https://ibrahimroshdy.medium.com/how-to-build-your-docker-images-using-multi-arch-to-support-arm64-m1-macbook-6ebc42a47cd7">article</a>.</p>
-<p>Create a virtualenv </p>
+<p>Create a virtualenv</p>
 <pre><code class="language-bash"> virtualenv venv -p python3
 </code></pre>
 <p>Activate your venv</p>
@@ -470,13 +470,13 @@ Note: Those are the same instructions in <code>.github/workflows/ci_workflows.ym
 <p>Run poetry install to install all needed python packages</p>
 <pre><code class="language-bash">poetry install
 </code></pre>
-<p>Run pyfiglet because you can </p>
+<p>Run pyfiglet because you can</p>
 <pre><code class="language-bash">pyfiglet Continuous Integration
 </code></pre>
 <p>Finally, run code</p>
 <pre><code class="language-bash">python simple_loop.py
 </code></pre>
-<p>You should have something like that: </p>
+<p>You should have something like that:</p>
 <pre><code class="language-bash">This is a progress bar of the simple loop script
 100%|███████| 1000000/1000000 [00:00&lt;00:00, 4474649.76it/s]
 </code></pre>

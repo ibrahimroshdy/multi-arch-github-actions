@@ -116,5 +116,3 @@ markdown_extensions:
   - toc:
       permalink: true
       separator: "_"
-
-

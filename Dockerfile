@@ -32,5 +32,3 @@ RUN chmod +x simple_loop.py
 
 # Entrypoint
 CMD ["python","simple_loop.py"]
-
-

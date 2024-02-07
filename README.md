@@ -3,6 +3,7 @@
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 [![Continuous Integration](https://github.com/ibrahimroshdy/continuous_integration/actions/workflows/ci_workflow.yml/badge.svg?branch=main)](https://github.com/ibrahimroshdy/continuous_integration/actions/workflows/ci_workflow.yml)
 [![codecov](https://codecov.io/gh/ibrahimroshdy/continuous_integration/branch/main/graph/badge.svg?token=Y56VABDZA7)](https://codecov.io/gh/ibrahimroshdy/continuous_integration)
+[![pre-commit.ci status](https://results.pre-commit.ci/badge/github/ibrahimroshdy/continuous_integration/main.svg)](https://results.pre-commit.ci/latest/github/ibrahimroshdy/continuous_integration/main)
 
 ## About
 
@@ -22,7 +23,7 @@ continuous_integration
 │     ├── actions # Custom actions directory
 │     │   └── install-run-code # This project's Custom Action to be referred to by name in workflows
 │     │       └── action.yml # Action instructions file [Must be named action]
-│     └── workflows # This project's Workflows 
+│     └── workflows # This project's Workflows
 │         └── ci_workflow.yml # Workflow instructions file
 ├── .gitignore # git ignore file
 ├── pyproject.toml

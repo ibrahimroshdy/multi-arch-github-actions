@@ -1,4 +1,4 @@
-# Github workflow runner for Docker Multi-Arch using QEMU, Buildx for amd64 & arm64
+# GitHub workflow runner for Docker Multi-Arch using QEMU, Buildx for amd64 & arm64
 name: Docker Multi-Arch
 
 on: [ push ]

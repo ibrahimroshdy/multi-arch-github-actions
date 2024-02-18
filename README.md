@@ -9,7 +9,7 @@
 
 ## About
 
-A sample project of adding continuous integration
+A sample project of adding continuous integration multi-arch buildx
 to GitHub and utilising the GitHub actions, workflows and job settings.
 This project contains a `simple_loop.py` python file that prints a progress bar of a for loop.
 The aim of this project to serve a sample project for implementing GitHub's

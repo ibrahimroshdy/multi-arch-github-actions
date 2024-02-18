@@ -1,7 +1,7 @@
 [tool.poetry]
-name = "continuous_integration"
+name = "multi-arch-github-actions"
 version = "0.1.0"
-description = "A sample project of adding continuous integration to GitHub and utilising the GitHub actions, workflows and job settings."
+description = "A sample project of adding multi-arch build pipeline to GitHub and utilising the GitHub actions, workflows and job settings."
 authors = ["ibrahimroshdy <ibrahimabdelrahman@aucegypt.edu>"]
 
 [tool.poetry.dependencies]

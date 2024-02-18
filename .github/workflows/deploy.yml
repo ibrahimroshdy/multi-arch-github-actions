@@ -34,7 +34,7 @@ jobs:
         run: |
           git config user.name "${{ github.repository_owner }}"
           git config user.email "${{ secrets.GH_EMAIL }}"
-          git remote add gh-token "https://${{ secrets.PAT }}@github.com/ibrahimroshdy/continuous_integration.git"
+          git remote add gh-token "https://${{ secrets.PAT }}@github.com/ibrahimroshdy/multi-arch-github-actions.git"
           git fetch gh-token
           git checkout main  # Ensure you are on the 'main' branch
           git pull origin main

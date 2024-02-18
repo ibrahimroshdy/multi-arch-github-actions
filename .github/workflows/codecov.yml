@@ -1,4 +1,4 @@
-# Github workflow runner instructions using cutomized actions
+# Github workflow runner instructions using customized actions
 name: Code Coverage [CodeCov]
 
 on: [ push ]
@@ -15,7 +15,7 @@ jobs:
         run: |
           pip install pyfiglet
           pip install -r requirements.txt
-          pyfiglet Continuous Integration
+          pyfiglet Multi-Arch Build with GitHub Actions
       - name: Run Coverage
         run: coverage run simple_loop.py
       - name: Run CodeCov

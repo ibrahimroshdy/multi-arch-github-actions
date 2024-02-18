@@ -13,23 +13,23 @@
       
       
       
+        <link rel="prev" href="..">
       
-        <link rel="next" href="ci_multi_arch/">
       
       
-      <link rel="icon" href="assets/images/favicon.png">
+      <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.1">
     
     
       
-        <title>Multi-Arch Github Actions</title>
+        <title>CI Multi Arch GHA - Multi-Arch Github Actions</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.45e1311d.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.45e1311d.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -48,9 +48,9 @@
       
     
     
-      <link rel="stylesheet" href="assets/_mkdocstrings.css">
+      <link rel="stylesheet" href="../assets/_mkdocstrings.css">
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#multi_arch_github_actions" class="md-skip">
+        <a href="#multi-architecture_docker_images" class="md-skip">
           Skip to content
         </a>
       
@@ -92,7 +92,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="Multi-Arch Github Actions" class="md-header__button md-logo" aria-label="Multi-Arch Github Actions" data-md-component="logo">
+    <a href=".." title="Multi-Arch Github Actions" class="md-header__button md-logo" aria-label="Multi-Arch Github Actions" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -112,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Index
+              CI Multi Arch GHA
             
           </span>
         </div>
@@ -242,7 +242,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="Multi-Arch Github Actions" class="md-nav__button md-logo" aria-label="Multi-Arch Github Actions" data-md-component="logo">
+    <a href=".." title="Multi-Arch Github Actions" class="md-nav__button md-logo" aria-label="Multi-Arch Github Actions" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -269,6 +269,26 @@
       
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Index
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
     
   
   
@@ -281,91 +301,7 @@
         
       
       
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Index
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="." class="md-nav__link md-nav__link--active">
-        
-  
-  <span class="md-ellipsis">
-    Index
-  </span>
-  
-
-      </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#about" class="md-nav__link">
-    <span class="md-ellipsis">
-      About
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="About">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#folder_structure" class="md-nav__link">
-    <span class="md-ellipsis">
-      Folder Structure
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#getting_started" class="md-nav__link">
-    <span class="md-ellipsis">
-      Getting Started
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="ci_multi_arch/" class="md-nav__link">
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -374,6 +310,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -398,47 +335,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#about" class="md-nav__link">
-    <span class="md-ellipsis">
-      About
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="About">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#folder_structure" class="md-nav__link">
-    <span class="md-ellipsis">
-      Folder Structure
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#getting_started" class="md-nav__link">
-    <span class="md-ellipsis">
-      Getting Started
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -452,60 +348,48 @@
                   
 
 
-<h1 id="multi_arch_github_actions">Multi Arch GitHub Actions<a class="headerlink" href="#multi_arch_github_actions" title="Permanent link">&para;</a></h1>
-<p><img alt="Python" src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&amp;logo=python&amp;logoColor=ffdd54" />
-<a href="https://ibrahimroshdy.github.io/multi-arch-github-actions/"><img alt="Static Badge" src="https://img.shields.io/badge/DOCS-Continous%20Integration-Green?style=for-the-badge" /></a>
-<a href="https://ibrahimroshdy.medium.com/how-to-build-your-docker-images-using-multi-arch-to-support-arm64-m1-macbook-6ebc42a47cd7"><img alt="Static Badge" src="https://img.shields.io/badge/Medium-Post-black?style=for-the-badge" /></a></p>
-<p><a href="https://results.pre-commit.ci/latest/github/ibrahimroshdy/multi-arch-github-actions/main"><img alt="pre-commit.ci status" src="https://results.pre-commit.ci/badge/github/ibrahimroshdy/multi-arch-github-actions/main.svg" /></a>
-<a href="https://github.com/ibrahimroshdy/multi-arch-github-actions/actions/workflows/ci_workflow.yml"><img alt="multi-arch-github-actions" src="https://github.com/ibrahimroshdy/multi-arch-github-actions/actions/workflows/ci_workflow.yml/badge.svg?branch=main" /></a>
-<a href="https://codecov.io/gh/ibrahimroshdy/multi-arch-github-actions"><img alt="codecov" src="https://codecov.io/gh/ibrahimroshdy/multi-arch-github-actions/branch/main/graph/badge.svg?token=Y56VABDZA7" /></a></p>
-<h2 id="about">About<a class="headerlink" href="#about" title="Permanent link">&para;</a></h2>
-<p>A sample project of adding continuous integration multi-arch buildx
-to GitHub and utilising the GitHub actions, workflows and job settings.
-This project contains a <code>simple_loop.py</code> python file that prints a progress bar of a for loop.
-The aim of this project to serve a sample project for implementing GitHub's
-workflow using workflow files, and custom actions and multiple jobs.</p>
-<h3 id="folder_structure">Folder Structure<a class="headerlink" href="#folder_structure" title="Permanent link">&para;</a></h3>
-<pre><code>multi-arch-github-actions
-│
-├── README.md
-├── .github # gitHub workflow directory
-│     ├── actions # Custom actions directory
-│     │   └── install-run-code # This project's Custom Action to be referred to by name in workflows
-│     │       └── action.yml # Action instructions file [Must be named action]
-│     └── workflows # This project's Workflows
-│         └── ci_workflow.yml # Workflow instructions file
-├── .gitignore # git ignore file
-├── pyproject.toml
-└── simple_loop.py
-</code></pre>
-<h3 id="getting_started">Getting Started<a class="headerlink" href="#getting_started" title="Permanent link">&para;</a></h3>
-<p>There is no need to run the project locally, but in case it is needed here is the quick start instructions used.
-Note: Those are the same instructions in <code>.github/workflows/ci_workflows.yml</code>
-and <code>.github/actions/install-run-code/actions.yml</code></p>
-<p>Project is also setup for a Docker Multi-arch build for <code>arm64</code> and <code>amd64</code>. Read more about it in
-this <a href="https://ibrahimroshdy.medium.com/how-to-build-your-docker-images-using-multi-arch-to-support-arm64-m1-macbook-6ebc42a47cd7">article</a>.</p>
-<p>Create a virtualenv</p>
-<pre><code class="language-bash"> virtualenv venv -p python3
-</code></pre>
-<p>Activate your venv</p>
-<pre><code class="language-bash">source venv/bin/activate
-</code></pre>
-<p>Install poetry and pyfiglet using pip</p>
-<pre><code class="language-bash">pip install poetry pyfiglet
-</code></pre>
-<p>Run poetry install to install all needed python packages</p>
-<pre><code class="language-bash">poetry install
-</code></pre>
-<p>Run pyfiglet because you can</p>
-<pre><code class="language-bash">pyfiglet Multi Arch GitHub Actions
-</code></pre>
-<p>Finally, run code</p>
-<pre><code class="language-bash">python simple_loop.py
-</code></pre>
-<p>You should have something like that:</p>
-<pre><code class="language-bash">This is a progress bar of the simple loop script
-100%|███████| 1000000/1000000 [00:00&lt;00:00, 4474649.76it/s]
+<h1 id="multi-architecture_docker_images">Multi-Architecture Docker Images<a class="headerlink" href="#multi-architecture_docker_images" title="Permanent link">&para;</a></h1>
+<div class="admonition note">
+<p class="admonition-title">Multi-Architecture Docker Images</p>
+<p>This guide will show you how to build and push multi-architecture Docker images using GitHub Actions.</p>
+</div>
+<p>Probably thats all you need to setup a multi-arch build for your project.
+The following is a sample GitHub workflow file that builds and pushes multi-arch Docker images to GitHub Container Registry (ghcr.io).</p>
+<pre><code class="language-yaml"># Github workflow runner for Docker Multi-Arch using QEMU, Buildx for amd64 &amp; arm64
+name: Docker Multi-Arch
+
+on: [ push ]
+
+jobs:
+  build:
+    runs-on: ubuntu-20.04
+    name: build for amd64/arm64
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+        # Setup hardware emulator using QEMU
+      - name: Set up QEMU
+        uses: docker/setup-qemu-action@v2
+
+        # Setup Docker Buildx for multi-arch images
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v2
+
+      - name: Login to GitHub Container Registry
+        uses: docker/login-action@v2
+        with:
+          registry: ghcr.io
+          username: ${{ github.repository_owner }}
+          password: ${{ secrets.pat }} # GitHub Personal Access Token (PAT)
+
+      - name: Build and push
+        uses: docker/build-push-action@v4
+        with:
+          context: . # use the Dockerfile in the root directory
+          platforms: linux/amd64, linux/arm64 # multi-arch build
+          push: true # push the image to the registry
+          tags: ghcr.io/${{ github.repository }}:${{ github.ref_name }} # tag the image with the branch name
 </code></pre>
 
 
@@ -535,22 +419,22 @@ this <a href="https://ibrahimroshdy.medium.com/how-to-build-your-docker-images-u
       
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
-        
           
-          <a href="ci_multi_arch/" class="md-footer__link md-footer__link--next" aria-label="Next: CI Multi Arch GHA">
-            <div class="md-footer__title">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              <div class="md-ellipsis">
-                CI Multi Arch GHA
-              </div>
-            </div>
+          <a href=".." class="md-footer__link md-footer__link--prev" aria-label="Previous: Index">
             <div class="md-footer__button md-icon">
               
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Index
+              </div>
             </div>
           </a>
+        
         
       </nav>
     
@@ -581,10 +465,10 @@ this <a href="https://ibrahimroshdy.medium.com/how-to-build-your-docker-images-u
     </div>
     
     
-    <script id="__config" type="application/json">{"base": ".", "features": ["announce.dismiss", "content.action.edit", "content.action.view", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.footer", "navigation.indexes", "navigation.sections", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["announce.dismiss", "content.action.edit", "content.action.view", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.footer", "navigation.indexes", "navigation.sections", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="assets/javascripts/bundle.d7c377c4.min.js"></script>
+      <script src="../assets/javascripts/bundle.d7c377c4.min.js"></script>
       
     
   </body>

@@ -1,9 +1,11 @@
-# Continuous Integration
+# Multi-Arch Build with GitHub Actions
 
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
-[![Continuous Integration](https://github.com/ibrahimroshdy/continuous_integration/actions/workflows/ci_workflow.yml/badge.svg?branch=main)](https://github.com/ibrahimroshdy/continuous_integration/actions/workflows/ci_workflow.yml)
-[![codecov](https://codecov.io/gh/ibrahimroshdy/continuous_integration/branch/main/graph/badge.svg?token=Y56VABDZA7)](https://codecov.io/gh/ibrahimroshdy/continuous_integration)
-[![pre-commit.ci status](https://results.pre-commit.ci/badge/github/ibrahimroshdy/continuous_integration/main.svg)](https://results.pre-commit.ci/latest/github/ibrahimroshdy/continuous_integration/main)
+[![Static Badge](https://img.shields.io/badge/DOCS-MultiArch%20GitHub%20Actions-Green?style=for-the-badge)](https://ibrahimroshdy.github.io/multi-arch-github-actions/)
+
+[![pre-commit.ci status](https://results.pre-commit.ci/badge/github/ibrahimroshdy/multi-arch-github-actions/main.svg)](https://results.pre-commit.ci/latest/github/ibrahimroshdy/multi-arch-github-actions/main)
+[![Multi-Arch GitHub Actions](https://github.com/ibrahimroshdy/multi-arch-github-actions/actions/workflows/ci_workflow.yml/badge.svg?branch=main)](https://github.com/ibrahimroshdy/multi-arch-github-actions/actions/workflows/ci_workflow.yml)
+[![codecov](https://codecov.io/gh/ibrahimroshdy/multi-arch-github-actions/branch/main/graph/badge.svg?token=Y56VABDZA7)](https://codecov.io/gh/ibrahimroshdy/multi-arch-github-actions)
 
 ## About
 
@@ -16,7 +18,7 @@ workflow using workflow files, and custom actions and multiple jobs.
 ### Folder Structure
 
 ```
-continuous_integration
+multi-arch-github-actions
 │
 ├── README.md
 ├── .github # gitHub workflow directory
@@ -66,7 +68,7 @@ poetry install
 Run pyfiglet because you can
 
 ```bash
-pyfiglet Continuous Integration
+pyfiglet Multi-Arch Build with GitHub Actions
 ```
 
 Finally, run code

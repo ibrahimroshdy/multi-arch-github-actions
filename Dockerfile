@@ -1,7 +1,7 @@
 # Docker image as python for system requirment (Installing requirements for debian environment)
 FROM  python:3.11-slim
-LABEL org.opencontainers.image.source https://github.com/ibrahimroshdy/continuous_integration
-LABEL org.opencontainers.image.description "A sample project of adding continuous integration to GitHub and utilising the GitHub actions, workflows and job settings."
+LABEL org.opencontainers.image.source https://github.com/ibrahimroshdy/multi-arch-github-actions
+LABEL org.opencontainers.image.description "A sample project of adding multi-arch support to github actions with docker buildx. Targetting arm64, amd64 and arm/v7 architectures."
 
 # Keeps Python from generating .pyc files in the container
 ENV PYTHONDONTWRITEBYTECODE 1

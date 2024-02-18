@@ -1,5 +1,5 @@
-# custom action to install packages and run simple loop scrript
-name: 'Continuous Integration Custom Action'
+# custom action to install packages and run simple loop script
+name: 'Multi Arch Build with GitHub Actions'
 description: 'Install required packages and run code'
 inputs:
   project_name: # Project name

@@ -1,5 +1,5 @@
-# Github workflow runner instructions using cutomized actions
-name: Continuous Integration
+# Github workflow runner instructions using customized actions
+name: Multi-Arch GitHub Actions
 
 on: [ push ]
 
@@ -31,7 +31,7 @@ jobs:
         run: |
           pip install pyfiglet
           pip install -r requirements.txt
-          pyfiglet Continuous Integration
+          pyfiglet Multi-Arch Build with GitHub Actions
       - name: Run Code
         run: python simple_loop.py
 
@@ -46,4 +46,4 @@ jobs:
         uses: ./.github/actions/install-run-code
         with:
           project_name:
-            Continuous Integration [With Custom Action]
+            Multi-Arch Build with GitHub Actions [With Custom Action]

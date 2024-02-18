@@ -5,7 +5,7 @@
 
 [![pre-commit.ci status](https://results.pre-commit.ci/badge/github/ibrahimroshdy/multi-arch-github-actions/main.svg)](https://results.pre-commit.ci/latest/github/ibrahimroshdy/multi-arch-github-actions/main)
 [![Multi-Arch GitHub Actions](https://github.com/ibrahimroshdy/multi-arch-github-actions/actions/workflows/ci_workflow.yml/badge.svg?branch=main)](https://github.com/ibrahimroshdy/multi-arch-github-actions/actions/workflows/ci_workflow.yml)
-[![codecov](https://codecov.io/gh/ibrahimroshdy/multi-arch-github-actions/branch/main/graph/badge.svg?token=Y56VABDZA7)](https://codecov.io/gh/ibrahimroshdy/multi-arch-github-actions)
+[![codecov](https://codecov.io/gh/ibrahimroshdy/multi-arch-github-actions/graph/badge.svg?token=Y56VABDZA7)](https://codecov.io/gh/ibrahimroshdy/multi-arch-github-actions)
 
 ## About
 

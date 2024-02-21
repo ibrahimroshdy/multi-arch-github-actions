@@ -18,18 +18,18 @@ workflow using workflow files, and custom actions and multiple jobs.
 ### Folder Structure
 
 ```
-multi-arch-github-actions
-│
-├── README.md
-├── .github # gitHub workflow directory
-│     ├── actions # Custom actions directory
-│     │   └── install-run-code # This project's Custom Action to be referred to by name in workflows
-│     │       └── action.yml # Action instructions file [Must be named action]
-│     └── workflows # This project's Workflows
-│         └── ci_workflow.yml # Workflow instructions file
-├── .gitignore # git ignore file
-├── pyproject.toml
-└── simple_loop.py
+    multi-arch-github-actions
+    │
+    ├── README.md
+    ├── .github # gitHub workflow directory
+    │     ├── actions # Custom actions directory
+    │     │   └── install-run-code # This project's Custom Action to be referred to by name in workflows
+    │     │       └── action.yml # Action instructions file [Must be named action]
+    │     └── workflows # This project's Workflows
+    │         └── ci_workflow.yml # Workflow instructions file
+    ├── .gitignore # git ignore file
+    ├── pyproject.toml
+    └── simple_loop.py
 ```
 
 ### Getting Started

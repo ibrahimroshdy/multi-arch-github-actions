@@ -77,7 +77,7 @@ Finally, run code
 python simple_loop.py
 ```
 
-You should have something like that:
+You should have something like that..
 
 ```bash
 This is a progress bar of the simple loop script

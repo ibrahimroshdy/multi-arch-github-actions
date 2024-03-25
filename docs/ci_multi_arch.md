@@ -3,7 +3,7 @@
 !!! note "Multi-Architecture Docker Images"
     This guide will show you how to build and push multi-architecture Docker images using GitHub Actions.
 
-Probably thats all you need to setup a multi-arch build for your project.
+Probably that's all you need to setup a multi-arch build for your project.
 The following is a sample GitHub workflow file that builds and pushes multi-arch Docker images to GitHub Container Registry (ghcr.io).
 
 ```yaml

@@ -1,5 +1,5 @@
 """
-A simple looping function with one python package requirement
+A simple looping function with one python package requirement.
 """
 
 from tqdm import tqdm

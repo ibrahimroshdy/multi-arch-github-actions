@@ -164,3 +164,13 @@ cython_debug/
 #.idea/
 
 # End of https://www.toptal.com/developers/gitignore/api/python
+
+
+# PyCharm
+.idea
+
+#vsCode
+.vscode
+
+# poetry
+poetry.lock
